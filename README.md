@@ -12,7 +12,7 @@
 
 <div class="center">
   
-<img  src="https://github.com/Hallur20/IntegrationAssignment2/blob/master/conection.PNG" alt="Smiley face" height="auto" width="auto">
+<img class="center" src="https://github.com/Hallur20/IntegrationAssignment2/blob/master/conection.PNG" alt="Smiley face" height="auto" width="auto">
 
 </div>
 
