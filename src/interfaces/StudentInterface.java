@@ -16,6 +16,6 @@ import java.util.ArrayList;
  */
 public interface StudentInterface extends Remote{
     public String getAllStudents() throws RemoteException;
-    ArrayList<Student> getNewStudents() throws RemoteException, IOException;
-    ArrayList<Student> getOldStudents() throws RemoteException, SQLException;
+    ArrayList<Student> getOldStudents() throws RemoteException, IOException;
+    ArrayList<Student> getNewStudents() throws RemoteException, SQLException;
 }

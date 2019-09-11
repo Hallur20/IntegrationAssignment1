@@ -17,6 +17,8 @@ import java.util.ArrayList;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.rmi.RemoteException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author hvn15
@@ -38,6 +40,8 @@ public class StudentFactory extends UnicastRemoteObject implements StudentInterf
             studentsFromFile = getNewStudents();
         } catch (IOException ex) {
             System.out.println(ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(StudentFactory.class.getName()).log(Level.SEVERE, null, ex);
         }
         for (Student student : studentsFromFile) {
             allStudents += student.getName() + ", " + student.getEmail() + ", " + student.getAge() + ", " + student.getSemester() + "\n";
@@ -45,8 +49,8 @@ public class StudentFactory extends UnicastRemoteObject implements StudentInterf
 
         try {
             studentsFromMySQL = getOldStudents();
-        } catch (SQLException ex) {
-            java.util.logging.Logger.getLogger(StudentFactory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(StudentFactory.class.getName()).log(Level.SEVERE, null, ex);
         }
         for (Student student: studentsFromMySQL) {
             allStudents += student.getName() + ", " + student.getEmail() + ", " + student.getAge() + ", " + student.getSemester() + "\n";
@@ -55,7 +59,7 @@ public class StudentFactory extends UnicastRemoteObject implements StudentInterf
     }
 
     @Override
-    public ArrayList<Student> getNewStudents() throws RemoteException, IOException {
+    public ArrayList<Student> getOldStudents() throws RemoteException, IOException {
         ArrayList<Student> students = new ArrayList<>();
         Reader reader = Files.newBufferedReader(Paths.get(System.getProperty("user.dir") + "/newStudents.csv"));
         CSVReader csvReader = new CSVReader(reader, ',', '\'', 1);
@@ -68,7 +72,7 @@ public class StudentFactory extends UnicastRemoteObject implements StudentInterf
     }
 
     @Override
-    public ArrayList<Student> getOldStudents() throws RemoteException, SQLException {
+    public ArrayList<Student> getNewStudents() throws RemoteException, SQLException {
         ArrayList<Student> students = new ArrayList<>();
         Connection con = null;
         try {

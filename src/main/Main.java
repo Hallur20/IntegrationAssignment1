@@ -29,14 +29,17 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         try {
+            
+            
             //System.setProperty("java.rmi.server.hostname", "localhost");
             //10.50.131.82
             registry = LocateRegistry.createRegistry(1099);
             StudentFactory f = new StudentFactory();
             String engineName = "StudentServer";
+            System.setProperty("java.rmi.server.hostname","10.50.131.53");
             Naming.rebind("//localhost/StudentServer", new StudentFactory()); 
             //System.out.println("Engine " + engineName + " bound in registry");
-            System.out.println(f.getAllStudents());
+            System.out.println(f.getOldStudents());
         } catch (Exception e) {
             System.out.println(e);
         }
