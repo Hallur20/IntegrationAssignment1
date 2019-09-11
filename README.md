@@ -1,9 +1,20 @@
 <h1>Assignment 2 Integration: RPC/RMI Stud Admin Project </h1>
 
-<h3>description</h3>
-<p>The final produckt contains 3 main serctions: a server, client, MySQL database & CSV file. The server communictates with the
-csv file/database. The csv file contains 2nd semester students while the database container first semester students. Our client communicates with the server using a CLI.
-The final product we made can be used on 3 diffirent stations: 1-the client, 2-the server, 3 database where they can remotely communicate. 
+<h3>Description <g-emoji class="g-emoji" alias="page_with_curl" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c3.png">📃</g-emoji></h3>
+
+<p>The final produckt contains 3 main serctions:</p>
+
+<p>RMI-Server</p>
+
+<p>RMI-Client</p>
+
+<p>MySQL database & CSV file</p>
+
+<h4>What does the MYSQL database<img src="//d2.alternativeto.net/dist/icons/mysql-workbench_78451.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src="//d2.alternativeto.net/dist/icons/mysql-workbench_78451.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina="//d2.alternativeto.net/dist/icons/mysql-workbench_78451.png?width=128&amp;height=128&amp;mode=crop&amp;upscale=false" class="center-block img-responsive jq_unveil" alt="MySQL Workbench icon"> & CSV contians?</h4>
+
+TThe csv file contains 2nd semester students while the database container first semester students. Our client communicates with the server using a CLI.
+The final product we made can be used on 3 diffirent stations: 1-the client, 2-the server, 3 database where they can remotely communicate. he server communictates with the
+csv file/database.
 </p>
 
 <h3>instructions</h3>
