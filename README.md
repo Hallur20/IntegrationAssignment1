@@ -29,15 +29,15 @@
 <h3>Setup<g-emoji class="g-emoji" alias="gear" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2699.png">⚙️</g-emoji></h3>
 
 <ul>
-<li>1-Clone the project</li>
-<li>2-Open the server and client in your favorite java ide (It could be on one computer, or open the server on one computer and the client on another computer)</li>
-<li>Add the jar file <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/Assignment2IntregrationServer1.jar"> Assignment2IntegrationServer1.jar </a> to the libraries folder in the client project</li>
- <li>Open MYSQL workbench and create a user with all priveleges on mysql (if you do not have one)</li>
-<li>Open MYSQL workbench and run the <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/students.sql"> dump file </a></li>
-<li>After you have the database ready go to the server project, then to the logic package --> StudentFactory --> line 80 and change the ip/user/password into your user/your ip and port</li>
-<li>run server from Main.java</li>
-<li>run client from RMIClient.java</li>
-<li>Now you are ready to go! <g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></li>
+<li>1-Clone the project.</li>
+<li>2-Open the server and client in your favorite java ide (It could be on one computer, or open the server on one computer and the client on another computer).</li>
+<li>Add the jar file <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/Assignment2IntregrationServer1.jar"> Assignment2IntegrationServer1.jar </a> to the libraries folder in the client project.</li>
+ <li>Open MYSQL workbench and create a user with all priveleges on mysql (if you do not have one).</li>
+<li>Open MYSQL workbench and run the <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/students.sql"> dump file </a>.</li>
+<li>After you have the database ready go to the server project, then to the logic package --> StudentFactory --> line 80 and change the ip/user/password into your user/your ip and port.</li>
+<li>run server from Main.java.</li>
+<li>run client from RMIClient.java.</li>
+<li>Now you are ready to go! <g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji>.</li>
 </ul>
 
 <h3>Note <g-emoji class="g-emoji" alias="interrobang" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2049.png">⁉️</g-emoji></h3>
