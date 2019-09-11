@@ -10,6 +10,8 @@
 
 <p>3-MySQL database & CSV file</p>
 
+<p>The client communicates with the server using a CLI, the server reads the data from the MYSQL-database and the CSV-File. You can run the product using 3 difrent stations since the server, client, and database can communicate remotely which each other, or you can also run it on one station if you want to connect localhostly (READ the note section at the end of the readme file <g-emoji class="g-emoji" alias="small_red_triangle_down" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f53b.png">🔻</g-emoji>)</p>
+
 <h4>What does the MYSQL database & CSV contians?  <g-emoji class="g-emoji" alias="mag" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f50d.png">🔍</g-emoji></h4>
 
 <h5>MYSQL <img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/mysql-workbench-icon.png" style="margin-top:40px;" title="Mysql-workbench" alt="Mysql-workbench icon" width="48" height="48"></h5>
@@ -20,7 +22,7 @@
 
 <p>The csv file contains secound semester students ith the following informatil (Name, Email, age), you can see the file by <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/RMIServer/newStudents.csv">clicking her</a>. </p>
   
-  <p>The client communicates with the server using a CLI, the server reads the data from the MYSQL-database and the CSV-File. You can run the product using 3 difrent stations since the server, client, and database can communicate remotely, or you can also run it on one station if you want to connect localhostly</p>
+
 
 <h3>Setup<g-emoji class="g-emoji" alias="gear" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2699.png">⚙️</g-emoji></h3>
 
