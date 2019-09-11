@@ -37,7 +37,7 @@
 <li>After you have the database ready go to the server project, then to the logic package --> StudentFactory --> line 80 and change the ip/user/password into your user/your ip and port</li>
 <li>run server from Main.java</li>
 <li>run client from RMIClient.java</li>
-<li>Now you are ready to go!</li>
+<li>Now you are ready to go! <g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></li>
 </ul>
 
 <h3>Note <g-emoji class="g-emoji" alias="interrobang" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2049.png">⁉️</g-emoji></h3>
