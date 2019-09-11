@@ -18,11 +18,11 @@
 
 <h5>MYSQL <img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/mysql-workbench-icon.png" style="margin-top:40px;" title="Mysql-workbench" alt="Mysql-workbench icon" width="48" height="48"></h5>
 
-<p>The MySQL database contains the first semester students with the following informatil (Name, Email, age), you can see the dump-file by  <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/students.sql"> clicking her </a> .</p>
+<p>The MySQL database contains the first semester students with the following information (Name, Email, age), you can see the dump-file by  <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/students.sql"> clicking her </a> .</p>
 
 <h5>CSV File <img src="https://cdn3.iconfinder.com/data/icons/file-formats-set-2/64/x-17-512.png" alt="csv, file, format icon" class="d-block mx-auto" height="auto" width="40"></h5>
 
-<p>The csv file contains secound semester students ith the following informatil (Name, Email, age), you can see the file by <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/RMIServer/newStudents.csv">clicking her</a>. </p>
+<p>The csv file contains secound semester students ith the following information (Name, Email, age), you can see the file by <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/RMIServer/newStudents.csv">clicking her</a>. </p>
   
 
 
