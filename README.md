@@ -1,4 +1,4 @@
-<h1>Assignment 2 Integration: RPC/RMI Stud Admin Project </h1>
+<h1 align="center">Assignment 2 Integration: RPC/RMI Stud Admin Project </h1>
 
 <h3>Description <g-emoji class="g-emoji" alias="page_with_curl" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c3.png">📃</g-emoji></h3>
 
