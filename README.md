@@ -10,7 +10,7 @@
 
 <p>MySQL database & CSV file</p>
 
-<h4>What does the MYSQL database<img src="//d2.alternativeto.net/dist/icons/mysql-workbench_78451.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src="//d2.alternativeto.net/dist/icons/mysql-workbench_78451.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina="//d2.alternativeto.net/dist/icons/mysql-workbench_78451.png?width=128&amp;height=128&amp;mode=crop&amp;upscale=false" class="center-block img-responsive jq_unveil" alt="MySQL Workbench icon"> & CSV contians?</h4>
+<h4>What does the MYSQL database <img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/mysql-workbench-icon.png" style="margin-top:40px;" title="Mysql-workbench" alt="Mysql-workbench icon" width="48" height="48"> & CSV contians?</h4>
 
 TThe csv file contains 2nd semester students while the database container first semester students. Our client communicates with the server using a CLI.
 The final product we made can be used on 3 diffirent stations: 1-the client, 2-the server, 3 database where they can remotely communicate. he server communictates with the
