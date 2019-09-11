@@ -10,11 +10,10 @@
 
 <p>3-MySQL database & CSV file</p>
 
-<divclass="center">
   
-<img src="https://github.com/Hallur20/IntegrationAssignment2/blob/master/conection.PNG" alt="Smiley face" height="auto" width="auto">
+<img src="https://github.com/Hallur20/IntegrationAssignment2/blob/master/conection.PNG" alt="Suni" class="center" height="auto" width="auto">
 
-</div>
+
 
 <p>The client communicates with the server using a CLI, the server reads the data from the MYSQL-database and the CSV-File. You can run the product using 3 difrent stations since the server, client, and database can communicate remotely which each other, or you can also run it on one station if you want to connect localhostly (READ the note section at the end of the readme file <g-emoji class="g-emoji" alias="small_red_triangle_down" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f53b.png">🔻</g-emoji>)</p>
 
