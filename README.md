@@ -10,8 +10,12 @@
 
 <p>MySQL database & CSV file</p>
 
-<h4>What does the MYSQL database <img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/mysql-workbench-icon.png" style="margin-top:40px;" title="Mysql-workbench" alt="Mysql-workbench icon" width="48" height="48"> & CSV contians?</h4>
+<h4>What does the MYSQL database & CSV contians?</h4>
 
+<h5>MYSQL <img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/mysql-workbench-icon.png" style="margin-top:40px;" title="Mysql-workbench" alt="Mysql-workbench icon" width="48" height="48"></h5>
+<p>The MySQL database contains the first semester students with the following informatil (Name, Email, age)</p>
+
+<h5>CSV File <img src="https://cdn3.iconfinder.com/data/icons/file-formats-set-2/64/x-17-512.png" alt="csv, file, format icon" class="d-block mx-auto" height="auto" width="40"></h5>
 TThe csv file contains 2nd semester students while the database container first semester students. Our client communicates with the server using a CLI.
 The final product we made can be used on 3 diffirent stations: 1-the client, 2-the server, 3 database where they can remotely communicate. he server communictates with the
 csv file/database.
