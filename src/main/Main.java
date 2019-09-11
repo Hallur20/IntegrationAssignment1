@@ -5,18 +5,13 @@
  */
 package main;
 
-import au.com.bytecode.opencsv.CSVReader;
-import com.mysql.jdbc.Statement;
 import java.io.IOException;
-import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.sql.*;
 import logic.StudentFactory;
+import java.rmi.registry.Registry;
+import java.rmi.registry.LocateRegistry;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
+
 /**
  *
  * @author hvn15
@@ -26,10 +21,25 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static Registry registry;
-    public static void main(String[] args) throws IOException {
+    public Main() throws RemoteException {
+        super();
+    }
 
-        StudentFactory f = new StudentFactory();
-        System.out.println(f.getAllStudents());
+    public static Registry registry;
+
+    public static void main(String[] args) throws IOException {
+        try {
+            //System.setProperty("java.rmi.server.hostname", "10.50.131.53");
+            //10.50.131.82
+            registry = LocateRegistry.createRegistry(1300);
+            StudentFactory f = new StudentFactory();
+            String engineName = "StudentServer";
+            Naming.rebind("//localhost/StudentServer", new StudentFactory()); 
+            //System.out.println("Engine " + engineName + " bound in registry");
+            System.out.println(f.getAllStudents());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
     }
 }

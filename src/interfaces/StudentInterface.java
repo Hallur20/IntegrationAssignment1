@@ -4,12 +4,18 @@
  * and open the template in the editor.
  */
 package interfaces;
+import entity.Student;
+import java.io.IOException;
 import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.sql.SQLException;
+import java.util.ArrayList;
 /**
  *
  * @author hvn15
  */
 public interface StudentInterface extends Remote{
-    public String getAllStudents();
-    public String getSemesterStudents(int sem);
+    public String getAllStudents() throws RemoteException;
+    ArrayList<Student> getNewStudents() throws RemoteException, IOException;
+    ArrayList<Student> getOldStudents() throws RemoteException, SQLException;
 }

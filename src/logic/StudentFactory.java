@@ -10,21 +10,27 @@ import entity.Student;
 import interfaces.StudentInterface;
 import java.io.IOException;
 import java.io.Reader;
-import java.lang.System.Logger;
-import java.lang.System.Logger.Level;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.*;
 import java.util.ArrayList;
-
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+import java.rmi.RemoteException;
 /**
  *
  * @author hvn15
  */
-public class StudentFactory implements StudentInterface {
+public class StudentFactory extends UnicastRemoteObject implements StudentInterface {
+
+    public StudentFactory() throws RemoteException{
+        super();
+    }
+    
+    
 
     @Override
-    public String getAllStudents() {
+    public String getAllStudents() throws RemoteException{
         String allStudents = "";
         ArrayList<Student> studentsFromFile = null;
         ArrayList<Student> studentsFromMySQL = null;
@@ -49,11 +55,7 @@ public class StudentFactory implements StudentInterface {
     }
 
     @Override
-    public String getSemesterStudents(int sem) {
-        return "";
-    }
-
-    private ArrayList<Student> getNewStudents() throws IOException {
+    public ArrayList<Student> getNewStudents() throws RemoteException, IOException {
         ArrayList<Student> students = new ArrayList<>();
         Reader reader = Files.newBufferedReader(Paths.get(System.getProperty("user.dir") + "/newStudents.csv"));
         CSVReader csvReader = new CSVReader(reader, ',', '\'', 1);
@@ -65,7 +67,8 @@ public class StudentFactory implements StudentInterface {
         return students;
     }
 
-    public static ArrayList<Student> getOldStudents() throws SQLException {
+    @Override
+    public ArrayList<Student> getOldStudents() throws RemoteException, SQLException {
         ArrayList<Student> students = new ArrayList<>();
         Connection con = null;
         try {
