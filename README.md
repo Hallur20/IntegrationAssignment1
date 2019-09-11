@@ -11,7 +11,7 @@
 <p>3-MySQL database & CSV file</p>
 
   
-<img src="https://github.com/Hallur20/IntegrationAssignment2/blob/master/conection.PNG" alt="Suni" class="center" height="auto" width="auto">
+<img src="https://github.com/Hallur20/IntegrationAssignment2/blob/master/conection.PNG" alt="UML"  height="auto" width="auto">
 
 
 
