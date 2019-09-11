@@ -2,45 +2,41 @@
 
 <h3>Description <g-emoji class="g-emoji" alias="page_with_curl" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c3.png">📃</g-emoji></h3>
 
-<p>The final produckt contains 3 main serctions:</p>
+<p>The final produckt contains 3 main sections:</p>
 
-<p>RMI-Server</p>
+<p>1-RMI-Server</p>
 
-<p>RMI-Client</p>
+<p>2-RMI-Client</p>
 
-<p>MySQL database & CSV file</p>
+<p>3-MySQL database & CSV file</p>
 
 <h4>What does the MYSQL database & CSV contians?  <g-emoji class="g-emoji" alias="mag" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f50d.png">🔍</g-emoji></h4>
 
 <h5>MYSQL <img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/mysql-workbench-icon.png" style="margin-top:40px;" title="Mysql-workbench" alt="Mysql-workbench icon" width="48" height="48"></h5>
 
-<p>The MySQL database contains the first semester students with the following informatil (Name, Email, age)</p>
+<p>The MySQL database contains the first semester students with the following informatil (Name, Email, age), you can see the dump-file by  <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/students.sql"> clicking her </a> .</p>
 
 <h5>CSV File <img src="https://cdn3.iconfinder.com/data/icons/file-formats-set-2/64/x-17-512.png" alt="csv, file, format icon" class="d-block mx-auto" height="auto" width="40"></h5>
 
-<p>The csv file contains secound semester students ith the following informatil (Name, Email, age), you can see the file by clicking het </p>
+<p>The csv file contains secound semester students ith the following informatil (Name, Email, age), you can see the file by <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/RMIServer/newStudents.csv">clicking her</a>. </p>
   
-  
-  
-  Our client communicates with the server using a CLI.
-The final product we made can be used on 3 diffirent stations: 1-the client, 2-the server, 3 database where they can remotely communicate. he server communictates with the
-csv file/database.
-</p>
+  <p>The client communicates with the server using a CLI, the server reads the data from the MYSQL-database and the CSV-File. You can run the product using 3 difrent stations since the server, client, and database can communicate remotely, or you can also run it on one station if you want to connect localhostly</p>
 
-<h3>instructions</h3>
+<h3>Setup<g-emoji class="g-emoji" alias="gear" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2699.png">⚙️</g-emoji></h3>
+
 <ul>
-<li>clone the project</li>
-<li>open the server and client in your favorite java ide</li>
-<li>add the jar file (Assignment2IntegrationServer1.jar) to the libraries folder in the client project</li>
-<li>open mysql workbench and run the dump file</li>
-<li>create a user with all priveleges on mysql</li>
-<li>in the server project, go to the logic package --> StudentFactory --> line 80 and change the ip/user/password to your user/your ip and port</li>
+<li>1-Clone the project</li>
+<li>2-Open the server and client in your favorite java ide (It could be on one computer, or open the server on one computer and the client on another computer)</li>
+<li>Add the jar file <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/Assignment2IntregrationServer1.jar"> Assignment2IntegrationServer1.jar </a> to the libraries folder in the client project</li>
+<li>Open MYSQL workbench and run the <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/students.sql"> dump file </a></li>
+<li>Create a user with all priveleges on mysql (if you do not have one)</li>
+<li>After you have the database ready go to the server project, then to the logic package --> StudentFactory --> line 80 and change the ip/user/password into your user/your ip and port</li>
 <li>run server from Main.java</li>
 <li>run client from RMIClient.java</li>
-<li>you should be setup</li>
+<li>Now you are ready to go!</li>
 </ul>
 
-<h3>scanner commands in client</h3>
+<h3>Client commands <img src="https://cdn0.iconfinder.com/data/icons/cosmo-multimedia/40/terminal-512.png" alt="cmd, command, console, line, linux, terminal icon" class="d-block mx-auto" height="auto" width="40"></h3>
 
 <ul>
 <li>type 1 to get all students from both csv file and database</li>
