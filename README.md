@@ -38,7 +38,7 @@
 <li>3-Add the jar file <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/Assignment2IntregrationServer1.jar"> Assignment2IntegrationServer1.jar </a> to the libraries folder in the client project.</li>
  <li>4-Open MYSQL workbench and create a user with all priveleges on mysql (if you do not have one).</li>
 <li>5-Open MYSQL workbench and run the <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/students.sql"> dump file </a>.</li>
-<li>6-After you have the database ready go to the server project, then to the logic package --> StudentFactory --> line 80 and change the ip/user/password into your user/your ip and port.</li>
+<li>6-After you have the database ready go to the server project, then to the logic package --> StudentFactory --> line 80 and change the ip/user/password into your user/your ip and port of your database.</li>
 <li>7-run server from Main.java.</li>
 <li>8-run client from RMIClient.java.</li>
 <li>9-Now you are ready to go! <g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji>.</li>
