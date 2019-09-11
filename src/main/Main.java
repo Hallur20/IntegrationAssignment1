@@ -29,9 +29,9 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         try {
-            //System.setProperty("java.rmi.server.hostname", "10.50.131.53");
+            //System.setProperty("java.rmi.server.hostname", "localhost");
             //10.50.131.82
-            registry = LocateRegistry.createRegistry(1300);
+            registry = LocateRegistry.createRegistry(1099);
             StudentFactory f = new StudentFactory();
             String engineName = "StudentServer";
             Naming.rebind("//localhost/StudentServer", new StudentFactory()); 
