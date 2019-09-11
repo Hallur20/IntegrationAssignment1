@@ -28,13 +28,18 @@
 <li>1-Clone the project</li>
 <li>2-Open the server and client in your favorite java ide (It could be on one computer, or open the server on one computer and the client on another computer)</li>
 <li>Add the jar file <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/Assignment2IntregrationServer1.jar"> Assignment2IntegrationServer1.jar </a> to the libraries folder in the client project</li>
+ <li>Open MYSQL workbench and create a user with all priveleges on mysql (if you do not have one)</li>
 <li>Open MYSQL workbench and run the <a href="https://github.com/Hallur20/IntegrationAssignment2/blob/master/students.sql"> dump file </a></li>
-<li>Create a user with all priveleges on mysql (if you do not have one)</li>
 <li>After you have the database ready go to the server project, then to the logic package --> StudentFactory --> line 80 and change the ip/user/password into your user/your ip and port</li>
 <li>run server from Main.java</li>
 <li>run client from RMIClient.java</li>
 <li>Now you are ready to go!</li>
 </ul>
+
+<h3>Note <g-emoji class="g-emoji" alias="interrobang" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2049.png">⁉️</g-emoji></h3>
+
+<p>If you are using  3 diffrent stations to run the project you should make sure that all of the 3 stations are connected to the same internet network, we used the school internet network which have the public-ip:10.50.131.53 ,which we used to connect remotly to the server from the client, if you are using a diffrent netwrok or localy so you need to change the 'ip' in the RMIClient.java class line 26, then go to the server and change the 'ip' in the Main.java class line: 39 </p>
+
 
 <h3>Client commands <img src="https://cdn0.iconfinder.com/data/icons/cosmo-multimedia/40/terminal-512.png" alt="cmd, command, console, line, linux, terminal icon" class="d-block mx-auto" height="auto" width="40"></h3>
 
